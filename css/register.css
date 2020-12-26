@@ -1,0 +1,190 @@
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+.style-red {
+    color: red;
+}
+
+.gray {
+    font-size: 14px;
+    color: gray;
+}
+
+.remind {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background: url(../img/remind.png) no-repeat;
+    background-size: 16px 16px;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
+.header {
+    height: 82px;
+    width: 100%;
+    border-bottom: 2px solid red;
+    padding: 10px 0;
+}
+
+.register {
+    height: 520px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.register_header {
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+    background-color: #f1f1f1;
+    line-height: 40px;
+    padding: 0 20px;
+}
+
+.register_header h3 {
+    float: left;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.register_header p {
+    float: right;
+}
+
+.register_body {
+    height: 400px;
+    width: 650px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.register_body li {
+    margin-bottom: 15px;
+}
+
+.register_body li label {
+    display: inline-block;
+    height: 36px;
+    width: 100px;
+    text-align: right;
+    line-height: 36px;
+}
+
+.register_body li input {
+    height: 34px;
+    width: 238px;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    padding: 0 5px;
+}
+
+.register_body .red {
+    font-size: 14px;
+    color: red;
+}
+
+.register_body .error {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background: url(../img/errow.png) no-repeat;
+    background-size: 16px 16px;
+    vertical-align: middle;
+    /* 只要看着背景图和文字一行显示，我们就要想到用vertical-aline：middle来实现居中对齐
+	(baseline基线对齐，bottom底部对齐) */
+    margin-top: -2px;
+    /* 但是就算使用了vertical-align，也会出现细微的不对称，这时我们可以利用margin来微调 */
+}
+
+.register_body .green {
+    font-size: 14px;
+    color: limegreen;
+}
+
+.register_body .success {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background: url(../img/success.png) no-repeat;
+    background-size: 16px 16px;
+    vertical-align: middle;
+}
+
+.register .safe {
+    color: gray;
+    padding-left: 156px;
+}
+
+.safe em {
+    font-size: 12px;
+    color: white;
+    padding: 0 12px;
+}
+
+.ruo {
+    background-color: yellowgreen;
+}
+
+.zhong {
+    background-color: orange;
+}
+
+.qiang {
+    background-color: darkred;
+}
+
+.register_body .agree0 {
+    padding-left: 97px;
+    margin-top: 30px;
+}
+
+.agree0 .agree {
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 10px;
+}
+
+.agree0 .book {
+    color: #00BFFF;
+}
+
+.register_body .finish {
+    padding-left: 154px;
+    margin: 40px 0;
+}
+
+.finish a {
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    padding: 10px 40px;
+    background-color: red;
+    font-weight: 700;
+}
+
+
+/* footer底部 */
+
+.footer_bottom {
+    text-align: center;
+    color: #666666;
+}
+
+.footer_bottom ul {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.footer_bottom li {
+    float: left;
+    margin: 10px 0;
+}
+
+.footer_bottom p {
+    margin: 10px 20px;
+    float: left;
+}

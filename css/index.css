@@ -1,0 +1,500 @@
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+.focus {
+    position: relative;
+    float: left;
+    width: 720px;
+    height: 455px;
+    background-color: #0000FF;
+    /* 溢出隐藏 */
+    overflow: hidden;
+}
+
+.focus ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 600%;
+}
+
+.focus ul li {
+    float: left;
+}
+
+.arrow_l,
+.arrow_r {
+    /* 先隐藏 */
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 30px;
+    height: 40px;
+    background: rgba(0, 0, 0, .2);
+    text-align: center;
+    line-height: 2.5rem;
+    color: white;
+    font-family: icomoon;
+    font-size: 30px;
+    z-index: 1;
+}
+
+.arrow_l {
+    left: 0;
+}
+
+.arrow_r {
+    right: 0;
+}
+
+.cricle {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+.cricle li {
+    float: left;
+    height: 8px;
+    width: 8px;
+    border: 3px solid rgba(255, 255, 255, .8);
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.current {
+    background-color: white;
+}
+
+
+/* 新闻快报 */
+
+.newsflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+
+.news {
+    height: 163px;
+    border: 1px solid lightgray;
+}
+
+.news_hd {
+    height: 32px;
+    border-bottom: 1px dotted lightgray;
+    line-height: 32px;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.news_hd a {
+    float: right;
+    font-family: icomoon;
+}
+
+.news_bd {
+    padding: 10px;
+}
+
+.news_bd li {
+    margin-bottom: 2px;
+    white-space: nowrap;
+    /* 让文字强制一行显示，除非遇到br标签 */
+    overflow: hidden;
+    /* 溢出隐藏 */
+    text-overflow: ellipsis;
+    /* 用省略号代替文字溢出隐藏 */
+}
+
+.news_bd li a {
+    font-size: 14px;
+}
+
+.lifeservice {
+    height: 208px;
+    border: 1px solid lightgray;
+    border-top: none;
+    overflow: hidden;
+    /* 隐藏li超出的部分 */
+}
+
+.lifeservice ul {
+    width: 253px;
+}
+
+.lifeservice li {
+    float: left;
+    height: 70px;
+    width: 62px;
+    /* 因为lifeservice盒子宽是250，而这里的li盒子一行就排不了4个(248+4=252)，
+	所以我们可以给它的父盒子ul(253px)的宽大于它的爷爷盒子(lifeservice 250px)的宽 然后再将超出lifeservice盒子的部分隐藏*/
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+}
+
+.hot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
+    height: 15px;
+    background-color: pink;
+    background: url(../img/jian.png) no-repeat;
+    background-size: 12px 15px;
+}
+
+
+/* 生活服务 */
+
+.lifeservice li a {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    /* 解决i引起的外边距塌陷的问题 */
+}
+
+.lifeservice li i {
+    display: block;
+    font-family: icomoon;
+    font-size: 30px;
+    color: red;
+    text-align: center;
+    /* 因为i是行内元素没有大小，所以当给它盒子的时候，
+	text-aline水平居中就没有效了，但是把它转为块级元素就有效了 */
+    margin: 7px auto;
+    /* 这里由于a和i都是块级元素，a又是i的父亲，所以会造成外边局塌陷
+	 解决办法就是给a加一句overflow:hidden(注意:这里不是隐藏的意思，是解决外边局塌陷的一种办法)*/
+}
+
+.lifeservice li p {
+    text-align: center;
+    /* 这里的p没有充当盒子，里面只有文字，所以text-aline水平居中就有效 */
+    font-size: 14px;
+}
+
+
+/* 特价 */
+
+.bargain {
+    height: 75px;
+    margin-top: 5px;
+    background-color: skyblue;
+}
+
+.recommend {
+    height: 163px;
+    margin-top: 10px;
+}
+
+.recommend_l {
+    width: 200px;
+    height: 100%;
+    background-color: #5A514E;
+}
+
+.recommend_l i {
+    display: block;
+    font-family: icomoon;
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+
+.recommend_l p {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+.recommend_r {
+    width: 1000px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.recommend_r ul {
+    width: 10001px;
+}
+
+.recommend_r li {
+    float: left;
+    height: 145px;
+    width: 249px;
+    border-right: 1px solid lightgray;
+    margin: 10px 0;
+}
+
+
+/* 猜你喜欢 */
+
+.like_hd {
+    height: 30px;
+    margin-top: 10px;
+}
+
+.like_hd h3 {
+    float: left;
+    color: red;
+}
+
+.like_hd a {
+    float: right;
+    line-height: 30px;
+    margin-right: 20px;
+    font-family: icomoon;
+}
+
+.like_bd {
+    height: 260px;
+    border: 1px solid lightgray;
+}
+
+.like_bd li {
+    float: left;
+    height: 200px;
+    width: 199px;
+    border-right: 1px dotted lightgray;
+    margin: 10px 0;
+}
+
+
+/* jingdong秒杀部分 */
+
+.like_bd li:nth-child(1) {
+    background-color: red;
+    background: url(../img/skill.png) no-repeat center;
+    background-size: 200px auto;
+    height: 260px;
+    margin: 0;
+}
+
+.like_bd li .countdown-title {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 31px;
+    color: white;
+}
+
+.like_bd li .countdown-desc {
+    margin-top: 100px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}
+
+.like_bd li .countdown-main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 130px;
+    height: 30px;
+    margin-top: 15px;
+    display: block;
+}
+
+.like_bd li .countdown-main span:nth-child(n) {
+    position: relative;
+    float: left;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #2f3430;
+    margin-right: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.like_bd li .countdown-main span:nth-child(2):after {
+    content: ':';
+    position: absolute;
+    font-size: 24px;
+    left: 38px;
+    top: -4px;
+}
+
+.like_bd li .countdown-main span:nth-child(2):before {
+    content: ':';
+    position: absolute;
+    font-size: 24px;
+    left: -14px;
+    top: -4px;
+}
+
+.like_bd li .countdown-main span:nth-child(3) {
+    margin-right: 0;
+}
+
+
+/* jingdong秒杀结束 */
+
+.like_bd .no-border {
+    border-right: none;
+    width: 198px;
+}
+
+.like_bd li img {
+    margin: 10px 25px 30px;
+}
+
+.like_bd ul li a {
+    display: block;
+    height: 220px;
+    width: 199px;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/* floor楼层区 */
+
+.box_hd {
+    height: 30px;
+    border-bottom: 2px solid red;
+    margin-top: 25px;
+}
+
+.box_hd h3 {
+    float: left;
+    color: red;
+}
+
+.box_hd ul {
+    float: right;
+}
+
+.box_hd ul li {
+    float: left;
+}
+
+.box_hd ul li a {
+    margin: 0 15px;
+}
+
+.box_bd {
+    height: 360px;
+}
+
+.box_bd li {
+    overflow: hidden;
+    /* 因为下面的hover效果让图片有了margin-left:10px 所以多了10px就压住li设置的边框线，
+	在这里我们可以使用溢出隐藏 overflow:hidden*/
+}
+
+.box_bd img {
+    transition: all .2s;
+}
+
+.box_bd img:hover {
+    margin-left: 10px;
+}
+
+.box_bd li {
+    height: 360px;
+    float: left;
+}
+
+.box_bd1 {
+    width: 209px;
+    background-color: #F5F8F4;
+}
+
+.box_bd1 ul li {
+    height: 35px;
+    width: 86px;
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 10px;
+}
+
+.box_bd1 ul li a {
+    display: block;
+    height: 32px;
+    width: 86px;
+    font-size: 14px;
+}
+
+.box_bd2 {
+    position: relative;
+    width: 329px;
+}
+
+.cricle1 {
+    position: absolute;
+    left: 50%;
+    margin-left: -12px;
+    bottom: 20px;
+}
+
+.cricle1 li {
+    float: left;
+    height: 8px;
+    width: 8px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.box_bd3 {
+    width: 219px;
+    border-right: 1px solid lightgray;
+}
+
+.box_bd3_item {
+    border-bottom: 1px solid lightgray;
+}
+
+.box_bd4 {
+    width: 220px;
+    border-right: 1px solid lightgray;
+}
+
+.box_bd5 {
+    width: 220px;
+    border-right: 1px solid lightgray;
+}
+
+
+/* 电梯导航 */
+
+.fixedtool {
+    position: fixed;
+    top: 100px;
+    right: 50%;
+    margin-right: -700px;
+    width: 66px;
+    background-color: palegoldenrod;
+    display: none;
+}
+
+.fixedtool ul li {
+    height: 35px;
+    width: 66px;
+    border-bottom: 1px solid red;
+    line-height: 35px;
+    text-align: center;
+}
+
+.fixedtool ul li a {
+    display: block;
+    height: 35px;
+    width: 66px;
+    font-size: 12px;
+}
+
+.fixedtool1 {
+    background-color: red;
+}
+
+.fixedtoola {
+    color: white;
+}

@@ -1,0 +1,277 @@
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.w{
+	width: 1200px;
+	margin: 0 auto;
+}
+@font-face {
+				font-family:'icomoon';
+				src: url('../fonts/icomoon.eot?7kkyc2');
+				src: url('../fonts/icomoon.eot?7kkyc2#iefix')format('embedded-opentype'),
+				url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+				url('../fonts/icomoon.ttf?7kkyc2') format('woff'),
+				url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+				font-weight: normal;
+				font-style: normal;
+			}
+.fr .icomoon{
+	font-family:icomoon;
+	font-size: 20px;
+	line-height: 25px;/*因为字体图标是一个方块图片，又是垂直居中，而这个符号又在这个方块图片偏下一点，
+				所以当它变大就会把旁边的文字也带下了一点，所以我们让它的line-height略小于shortcut行高就能升上去和文字一起居中了 */
+			}
+.style-red{
+	color: red;
+}
+.spacer{/* 隔离小竖线 */
+	width: 1px;
+	height: 16px;
+	background-color: #666666;
+	margin: 12px 10px 0;
+}
+/* 快捷导航栏制作 */
+.shortcut{
+	width: 100%;
+	height: 35px;
+	background-color: #F2F4F0;
+	line-height: 35px;
+	
+}
+.shortcut li{
+	float: left;
+	font-size: 14px;
+}
+/* 头部制作 */
+.header{
+	height: 120px;
+	position: relative;
+
+	
+}
+.header .logo a{
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	height: 60px;
+	width: 160px;
+	background: url(../img/logo.png) no-repeat;
+	background-size: 160px 60px;
+	font-size: 0;/* 优化logo，让搜索引擎更快找到，但是又不能显示在页面上， */
+}
+
+
+.header .search{
+	position: absolute;
+	top: 30px;
+	left: 350px;	
+}
+.search input{
+	float: left;
+	height: 32px;
+	width: 365px;
+	border: 2px solid red;
+	border-right: none;
+	color: lightgray;
+	padding: 0 10px;
+}
+.search button{
+	float: left;
+	height: 36px;
+	width: 75px;
+	background-color: #FF0000;
+	color: white;
+	border:0;
+	font-size: 14px;
+}
+ .shopcart{
+	position:absolute;
+	right: 30px;
+	top: 30px;
+	height: 40px;
+	width: 140px;
+	background-color:#F4F7F3;
+	line-height:36px ;
+	font-size: 12px;
+}
+ .cart{
+	font-family:icomoon;
+	font-size: 20px;
+	color: #FF0000;
+	padding: 0 10px;
+	}
+ .arrow/* 箭头 */{
+	font-family:icomoon;
+	font-size: 14px;
+	margin-left: 5px;
+	
+}
+.count{
+	position: absolute;
+	top: -5px;
+	left:100px ;
+	height: 15px;
+	background-color: red;
+	line-height: 15px;
+	padding: 0 5px;
+	color: white;
+	border-radius: 15px 15px 15px 0;
+}
+.hotwords{
+	position: absolute;
+	left: 350px;
+	top: 80px;
+}
+.hotwords li{
+	float: left;
+	margin-right: 10px;
+}
+.hotwords li a{
+	font-size: 14px;
+}
+/* 导航栏 */
+.nav{
+	height: 45px;
+	border-bottom: 2px solid black;
+	
+}
+.dropdown{
+	width: 210px;
+	float: left;
+}
+.dt{
+	width: 210px;
+	background-color:#BB2713;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	line-height: 45px;
+}
+.dd{
+	height: 455px;
+	background-color: #D5261D;
+	margin-top: 2px;
+	padding: 5px 0;
+	font-size: 14px;
+	
+}
+.dd li{
+	padding: 5px 10px;
+   color: white;
+   transition: all .5s;
+}
+.dd li a{
+	color: white;
+}
+.dd li:hover{
+	background-color: #E6E9E5;
+	color:red;
+	padding-left: 20px;
+}
+.dd li:hover a{
+	color: red;
+}
+.dd .arrow1{
+	font-family: icomoon;
+	float: right;
+	color: white;
+	
+}
+.rightitems{
+	float: left;
+	margin-left: 10px;
+}
+.rightitems li{
+	float: left;
+}
+.rightitems li a{
+	display: inline-block;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 25px;
+	font-size: 18px;
+}
+/* footer */
+.footer{
+	height: 400px;
+	background-color: #F2F4F0;
+	padding-top: 20px;
+	
+}
+.footer_top{
+	height: 79px;
+	border-bottom: 1px solid darkgray;
+	
+}
+.footer_top li{
+	float: left;
+	width: 240px;
+	height: 79px;
+}
+/* 精灵图开始*/
+.footer_top li i{
+	display: block;
+	height: 50px;
+	width: 50px;
+	float: left;
+	margin:15px 10px;
+	background: url(../img/sparite.png) no-repeat -9px -77px;
+}
+.footer_top .zheng{
+	background: url(../img/sparite.png) no-repeat -9px -77px;
+}
+.footer_top .kuai{
+	background: url(../img/sparite.png) no-repeat -9px -11px;
+}
+/* 精灵图完 */
+.footer_top .text{
+	height:50px;
+	float: left;
+	margin: 15px 0;
+}
+.footer_body{
+	height: 180px;
+	padding-top: 20px;
+	border-bottom: 1px solid darkgray;
+	
+}
+.footer_body dl{
+	float: left;
+	width: 200px;
+	
+}
+.footer_body dt{
+	margin: 10px 0 10px 30px;
+	font-size: 18px;
+	
+}
+.footer_body dd{
+	margin: 4px 30px;
+	font-size: 14px;
+}
+.footer_body .help img{
+	height: 80px;
+	width: 80px;
+	
+}
+.footer_bottom{
+	text-align: center;
+	color:#666666;
+}
+.footer_bottom ul{
+	margin-left: 110px;
+	float: left;
+}
+.footer_bottom li{
+	float: left;
+	margin: 10px 0;
+
+}
+.footer_bottom p{
+	margin: 10px 20px;
+	float: left;
+}
+

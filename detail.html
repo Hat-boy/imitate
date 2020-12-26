@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>jingdon-手机详情页</title>
+    <meta name="description" content="jingdong-专业的综合网上购物商城，销售家电，数码通讯，电脑，家具百货，
+		服装服饰，母婴，图书，食品等数万个品牌优质商品,便捷,诚信的服务,为您提供愉悦的网上购物体验!" />
+    <meta name="keywords" content="网上购物，网上商城，手机，笔记本，电脑，MP3，CD，VCD，DV，
+		相机，数码，配件，手表，存储卡，jingdon" />
+    <!-- 引入favicon图标 -->
+    <link rel="shortcut icon" type="image/x-icon" href="bitbug_favicon.ico" />
+    <!-- 引入初始化css文件 -->
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <!-- 引入公共样式css文件 -->
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <!-- 引入手机详情页css文件 -->
+    <link rel="stylesheet" type="text/css" href="css/detail.css" />
+    <!-- 引入js文件 -->
+    <script src="js/detail.js"></script>
+</head>
+
+<body>
+    <!-- 快捷导航 -->
+    <div class="shortcut">
+        <div class="w">
+            <div class="fl">
+                <ul>
+                    <li>jingdong欢迎你！请</li>
+                    <li>
+                        <a href="">登录</a>
+                        <a href="" class="style-red">免费注册</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li><a href="">我的订单</a></li>
+                    <li class="spacer"></li>
+                    <li>
+                        <a href="">我的jingdong</a>
+                        <i class="icomoon"></i>
+                    </li>
+                    <li class="spacer"></li>
+                    <li><a href="">jingdong会员</a></li>
+                    <li class="spacer"></li>
+                    <li><a href="">企业采购</a></li>
+                    <li class="spacer"></li>
+                    <li>
+                        <a href="">关注jingdong</a>
+                        <i class="icomoon"></i>
+                    </li>
+                    <li class="spacer"></li>
+                    <li>
+                        <a href="">客户服务</a>
+                        <i class="icomoon"></i>
+                    </li>
+                    <li class="spacer"></li>
+                    <li><a href="">网站导航</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- header制作 -->
+    <div class="header w">
+        <div class="logo">
+            <h1>
+                <!-- 商业开发logo一般都会加h1标签提权，为了让搜索引擎更快的找到我们网页  -->
+                <a href="index.html" title="jingdong">jingdong</a>
+            </h1>
+        </div>
+        <div class="search">
+            <input type="text" value="请输入搜索内容...">
+            <button>搜索</button>
+        </div>
+        <div class="shopcart">
+            <i class="cart"></i> 我的购物车
+            <i class="arrow"></i>
+            <i class="count">0</i>
+        </div>
+        <div class="hotwords">
+            <ul>
+                <li><a href="" class="style-red">jingdong首发</a></li>
+                <li><a href="">亿元优惠</a></li>
+                <li><a href="">9.9元团购</a></li>
+                <li><a href="">每满99减30</a></li>
+                <li><a href="">9.9元团购</a></li>
+                <li><a href="">办公用品</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 导航nav制作 -->
+    <div class="nav">
+        <div class="w">
+            <div class="dropdown">
+                <div class="dt">全部商品分类</div>
+                <div class="dd" style="display:none;">
+                    <ul>
+                        <li>
+                            <a href="">家用电器</a>
+                            <i class="arrow1"></i>
+                        </li>
+                        <li>
+                            <a href="">手机</a>/
+                            <a href="">运行商</a>/
+                            <a href="">数码</a>
+                            <i class="arrow1"></i>
+                        </li>
+                        <li>
+                            <a href="">手机</a>/
+                            <a href="">运行商</a>/
+                            <a href="">数码</a>
+                            <i class="arrow1"></i>
+                        </li>
+                        <li>
+                            <a href="">手机</a>/
+                            <a href="">运行商</a>/
+                            <a href="">数码</a>
+                            <i class="arrow1"></i>
+                        </li>
+                        <li>
+                            <a href="">手机</a>/
+                            <a href="">运行商</a>/
+                            <a href="">数码</a>
+                            <i class="arrow1"></i>
+                        </li>
+                        <li>
+                            <a href="">手机</a>/
+                            <a href="">运行商</a>/
+                            <a href="">数码</a>
+                            <i class="arrow1"></i>
+                        </li>
+                        <li>
+                            <a href="">手机</a>/
+                            <a href="">运行商</a>/
+                            <a href="">数码</a>
+                            <i class="arrow1"></i>
+                        </li>
+                        <li>
+                            <a href="">手机</a>/
+                            <a href="">运行商</a>/
+                            <a href="">数码</a>
+                            <i class="arrow1"></i>
+                        </li>
+                        <li>
+                            <a href="">手机</a>/
+                            <a href="">运行商</a>/
+                            <a href="">数码</a>
+                            <i class="arrow1"></i>
+                        </li>
+                        <li>
+                            <a href="">手机</a>/
+                            <a href="">运行商</a>/
+                            <a href="">数码</a>
+                            <i class="arrow1"></i>
+                        </li>
+                        <li>
+                            <a href="">手机</a>/
+                            <a href="">运行商</a>/
+                            <a href="">数码</a>
+                            <i class="arrow1"></i>
+                        </li>
+                        <li>
+                            <a href="">手机</a>/
+                            <a href="">运行商</a>/
+                            <a href="">数码</a>
+                            <i class="arrow1"></i>
+                        </li>
+                        <li>
+                            <a href="">手机</a>/
+                            <a href="">运行商</a>/
+                            <a href="">数码</a>
+                            <i class="arrow1"></i>
+                        </li>
+                        <li>
+                            <a href="">手机</a>/
+                            <a href="">运行商</a>/
+                            <a href="">数码</a>
+                            <i class="arrow1"></i>
+                        </li>
+                        <li>
+                            <a href="">手机</a>/
+                            <a href="">运行商</a>/
+                            <a href="">数码</a>
+                            <i class="arrow1"></i>
+                        </li>
+                        <li>
+                            <a href="">手机</a>/
+                            <a href="">运行商</a>/
+                            <a href="">数码</a>
+                            <i class="arrow1"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rightitems">
+                <ul>
+                    <li><a href="">服装城</a></li>
+                    <li><a href="">传智超市</a></li>
+                    <li><a href="">全球购</a></li>
+                    <li><a href="">美妆馆</a></li>
+                    <li><a href="">闪购</a></li>
+                    <li><a href="">团购</a></li>
+                    <li><a href="">拍卖</a></li>
+                    <li><a href="">有趣</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- detail内容制作 -->
+    <div class="container w">
+        <!-- 面包屑模块 -->
+        <div class="crumb_warp">
+            <a href="">手机 数码 通讯</a>>
+            <a href="list.html">手机</a>>
+            <a href="list.html">华为HUAWEI</a>>
+            <a href="">华为mate30</a>
+        </div>
+        <!-- 产品介绍模块 -->
+        <div class="product_intro clearfix">
+            <!-- 预览区域 -->
+            <div class="preview_wrap fl">
+                <div class="preview_img">
+                    <img src="img/goods.jpg" alt="" width="398" height="398">
+                    <div class="mask"></div>
+                    <div class="big">
+                        <img src="img/goods.jpg" alt="" class="big_img">
+                    </div>
+                </div>
+
+                <div class="preview_list">
+                    <ul class="list_item">
+                        <li class="current">
+                            <img src="img/item1.2.png" alt="" width="56" height="56">
+                        </li>
+                        <li>
+                            <img src="img/item1.1.png" alt="" width="56" height="56">
+                        </li>
+                        <li>
+                            <img src="img/item1.3.png" alt="" width="56" height="56">
+                        </li>
+                        <li>
+                            <img src="img/item1.3.png" alt="" width="56" height="56">
+                        </li>
+                        <li>
+                            <img src="img/item1.1.png" alt="" width="56" height="56">
+                        </li>
+                    </ul>
+                    <a href="" class="arrow_l"></a>
+                    <a href="" class="arrow_r"></a>
+                </div>
+                <div class="share_list">
+                    <ul>
+                        <li>商品编号：1111111</li>
+                        <li><i class="style-red"></i> 分享</li>
+                        <li><i class="style-red"></i> 关注 5000</li>
+                        <li> 对比</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 产品详细信息 -->
+            <div class="itemInfo_wrap fr">
+                <div class="ckull_name">
+                    <!-- 头骨名称 -->
+                    华为 HUAWEI mate 30 麒麟990旗舰芯片4000万超感光莱卡影相屏内指纹
+                </div>
+                <div class="recommend">
+                    推荐选择下方『移动优惠购』，手机套餐齐搞定，不用换号，每月还有花费返
+                </div>
+                <div class="summary">
+                    <dl class="summary_sprice">
+                        <!-- 摘要-价格 -->
+                        <dt>价格</dt>
+                        <dd>
+                            <i>￥4999</i>
+                            <a href="" class="style-red">降价通知</a>
+                            <a href="" class="comment">累计评价10000</a>
+                        </dd>
+                    </dl>
+                    <dl class="summary_promotion">
+                        <!-- 摘要-促销 -->
+                        <dt>促销</dt>
+                        <dd>
+                            <a href=""><em>加价购</em>满999.00另加20.00元，或
+								满1999，00另加30.00元，或满2999.00另加50.00 详情>></a>
+                        </dd>
+                    </dl>
+                    <dl class="summary_support">
+                        <!-- 摘要-支持 -->
+                        <dt>支持</dt>
+                        <dd>
+                            以旧换新，闲置手机回收，4G套餐超值抢 礼品购
+                        </dd>
+                    </dl>
+                    <dl class="summary_delivery">
+                        <!-- 摘要-配送 -->
+                        <dt>配送至</dt>
+                        <dd>
+                            北京市海淀区中关村，有货 支持 99元免运费 |货到付款 由自营发货， 并提供售后服务，11:00前完成下单，预计今天(08月10号)送达
+                        </dd>
+                    </dl>
+                    <dl class="choose_color">
+                        <dt>选择颜色</dt>
+                        <dd>
+                            <a href="javascript:;" class="current">玫瑰金</a>
+                            <a href="javascript:;">枫叶金</a>
+                            <a href="javascript:;">白色</a>
+                            <a href="javascript:;">土豪金</a>
+                        </dd>
+                    </dl>
+                    <dl class="choose_version">
+                        <!-- 选择版本 -->
+                        <dt>选择版本</dt>
+                        <dd>
+                            <a href="javascript:;" class="current">公开版</a>
+                            <a href="javascript:;">标准版</a>
+                            <a href="javascript:;">高配版</a>
+                            <a href="javascript:;">移动4G</a>
+                        </dd>
+                    </dl>
+                    <dl class="choose_type">
+                        <!-- 选择版本 -->
+                        <dt>选择类型</dt>
+                        <dd>
+                            <a href="javascript:;" class="current">16G</a>
+                            <a href="javascript:;">32G</a>
+                            <a href="javascript:;">64G</a>
+                        </dd>
+                    </dl>
+                    <dl class="choose_buy">
+                        <!-- 选择购买方式 -->
+                        <dt>购买方式</dt>
+                        <dd>
+                            <a href="javascript:;" class="current">官方标配</a>
+                            <a href="javascript:;">移动优惠购</a>
+                            <a href="javascript:;">电信优惠购</a>
+                        </dd>
+                    </dl>
+                    <dl class="choose_suit">
+                        <!-- 选择套装 -->
+                        <dt>套装</dt>
+                        <dd>
+                            <a href="javascript:;" class="current">保护套装</a>
+                            <a href="javascript:;">充电套装</a>
+                        </dd>
+                    </dl>
+                    <div class="choose">
+                        <div class="choose_buttons fl">
+                            <input type="text" value="1">
+                            <!-- 只要看着需要用户输入的就用input框 -->
+                            <a href="javascript:;" " class="add ">+</a>
+								<a href="javascript:; "" class="reduce">-</a>
+                        </div>
+                        <a href="javascript:;" class="addcar fl">加入购物车</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 产品详细模块 -->
+        <div class="product_detail clearfix">
+            <div class="aside fl">
+                <!-- 产品边盒子 -->
+                <div class="tab_list">
+                    <ul>
+                        <li class="tab_list1 current">相关分类</li>
+                        <li class="tab_list2">推荐品牌</li>
+                    </ul>
+                    <ul class="w93">
+                        <li><a href="">手机</a></li>
+                        <li><a href="">手机壳</a></li>
+                        <li><a href="">内存卡</a></li>
+                        <li><a href="">贴膜</a></li>
+                        <li><a href="">移动电源</a></li>
+                        <li><a href="">手机</a></li>
+                        <li><a href="">手机</a></li>
+                        <li><a href="">手机</a></li>
+                        <li><a href="">手机</a></li>
+                        <li><a href="">手机</a></li>
+                        <li><a href="">手机</a></li>
+                        <li><a href="">手机</a></li>
+                    </ul>
+                </div>
+                <div class="tab_con">
+                    <div class="same">
+                        购买了该产品的用户同时还购买了
+                    </div>
+                    <ul>
+                        <li>
+                            <img src="img/item4.png" alt="">
+                            <h5>荣耀30 Pro 50倍远摄 麒麟990 5G 4000万超感光摄影</h5>
+                            <p>￥3999</p>
+                            <a href="">购物车</a>
+                        </li>
+                        <li>
+                            <img src="img/item4.png" alt="">
+                            <h5>荣耀30 Pro 50倍远摄 麒麟990 5G 4000万超感光摄影</h5>
+                            <p>￥3999</p>
+                            <a href="">购物车</a>
+                        </li>
+                        <li>
+                            <img src="img/item4.png" alt="">
+                            <h5>荣耀30 Pro 50倍远摄 麒麟990 5G 4000万超感光摄影</h5>
+                            <p>￥3999</p>
+                            <a href="">购物车</a>
+                        </li>
+                        <li>
+                            <img src="img/item4.png" alt="">
+                            <h5>荣耀30 Pro 50倍远摄 麒麟990 5G 4000万超感光摄影</h5>
+                            <p>￥3999</p>
+                            <a href="">购物车</a>
+                        </li>
+                        <li>
+                            <img src="img/item4.png" alt="">
+                            <h5>荣耀30 Pro 50倍远摄 麒麟990 5G 4000万超感光摄影</h5>
+                            <p>￥3999</p>
+                            <a href="">购物车</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="detail fr">
+                <!--产品详细再详细 -->
+                <div class="detail_tab_list0">
+                    <!-- 由于这个模块和下面的模块几乎一样,就命名为list0 -->
+                    <a href="">选择配件</a>
+                </div>
+                <div class="detail_tab_con0 clearfix">
+                    <div class="con0_l fl">
+                        <ul class="goods_list">
+                            <li><a href="">精品</a></li>
+                            <li><a href="">HUAWEI配件</a></li>
+                            <li><a href="">蓝牙耳机</a></li>
+                            <li><a href="">自拍杆</a></li>
+                            <li><a href="">数据线</a></li>
+                            <li><a href="">移动电源</a></li>
+                            <li><a href="">U盘</a></li>
+                        </ul>
+                        <div class="goods">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="img/item8.png">
+                                        <h5>iphone7plus</h5>
+                                        <p>￥6999</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/item8.png">
+                                        <h5>iphone7plus</h5>
+                                        <p>￥6999</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/item8.png">
+                                        <h5>iphone7plus</h5>
+                                        <p>￥6999</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/item8.png">
+                                        <h5>iphone7plus</h5>
+                                        <p>￥6999</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/item8.png">
+                                        <h5>iphone7plus</h5>
+                                        <p>￥6999</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="goods_arrow_r">
+                            <a href=""></a>
+                        </div>
+                    </div>
+                    <div class="con0_r fl">
+                        <p>已选购0件搭配</p>
+                        <h4>套餐价:</h4>
+                        <i>￥6999</i>
+                        <a href="">加入购物车</a>
+                    </div>
+                </div>
+                <div class="detail_tab_list">
+                    <ul>
+                        <li>
+                            <a href="" class="current">商品介绍</a>
+                        </li>
+                        <li>
+                            <a href="">规格与包装</a>
+                        </li>
+                        <li>
+                            <a href="">商品评价</a>
+                        </li>
+                        <li>
+                            <a href="">商品介绍</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="detail_tab_con">
+                    <!-- <div class="item1">这里是为了和上面的tab栏一一对应,后期js会用</div> -->
+                    <ul>
+                        <li>分辨率:1920*1080(fhd)</li>
+                        <li>后置摄像头:1200万</li>
+                        <li>前置摄像头:500万</li>
+                        <li>分辨率:1920*1080(fhd)</li>
+                        <li>后置摄像头:1200万</li>
+                        <li>前置摄像头:500万</li>
+                        <li>分辨率:1920*1080(fhd)</li>
+                        <li>后置摄像头:1200万</li>
+                        <li>前置摄像头:500万</li>
+                        <li>分辨率:1920*1080(fhd)</li>
+                        <li>后置摄像头:1200万</li>
+                        <li>前置摄像头:500万</li>
+                    </ul>
+                    <p><a href="">查看更多参数</a></p>
+                    <img src="img/item6.png" alt="">
+                    <img src="img/item7.png" alt="">
+                    <img src="img/item5.png" alt="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer制作 -->
+    <div class="footer">
+        <div class="w">
+            <!-- footer顶部 -->
+            <div class="footer_top">
+                <ul>
+                    <li>
+                        <i class="zheng"></i>
+                        <div class="text">
+                            <h3>正品保障</h3>
+                            <p>正品保障，提供发票</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="kuai"></i>
+                        <div class="text">
+                            <h3>急速物流</h3>
+                            <p>急速物流，提供发票</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i></i>
+                        <div class="text">
+                            <h3>正品保障</h3>
+                            <p>正品保障，提供发票</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i></i>
+                        <div class="text">
+                            <h3>正品保障</h3>
+                            <p>正品保障，提供发票</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i></i>
+                        <div class="text">
+                            <h3>正品保障</h3>
+                            <p>正品保障，提供发票</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- footer身体 -->
+            <div class="footer_body">
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd><a href="">购物流程</a></dd>
+                    <dd><a href="">会员介绍</a></dd>
+                    <dd><a href="">生活旅行/团购</a></dd>
+                    <dd><a href="">常见问题</a></dd>
+                    <dd><a href="">大家电</a></dd>
+                    <dd><a href="">联系客服</a></dd>
+
+                </dl>
+                <dl>
+                    <dt>配送方式</dt>
+                    <dd><a href="">123</a></dd>
+                    <dd><a href="">123</a></dd>
+                    <dd><a href="">123</a></dd>
+                    <dd><a href="">123</a></dd>
+                    <dd><a href="">123</a></dd>
+                    <dd><a href="">123</a></dd>
+
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd><a href="">123</a></dd>
+                    <dd><a href="">123</a></dd>
+                    <dd><a href="">123</a></dd>
+                    <dd><a href="">123</a></dd>
+                    <dd><a href="">123</a></dd>
+                    <dd><a href="">123</a></dd>
+
+                </dl>
+                <dl>
+                    <dt>售后服务</dt>
+                    <dd><a href="">123</a></dd>
+                    <dd><a href="">123</a></dd>
+                    <dd><a href="">123</a></dd>
+                    <dd><a href="">123</a></dd>
+                    <dd><a href="">123</a></dd>
+                    <dd><a href="">123</a></dd>
+
+                </dl>
+                <dl>
+                    <dt>特殊服务</dt>
+                    <dd><a href="">123</a></dd>
+                    <dd><a href="">123</a></dd>
+                    <dd><a href="">123</a></dd>
+                    <dd><a href="">123</a></dd>
+                    <dd><a href="">123</a></dd>
+                    <dd><a href="">123</a></dd>
+
+                </dl>
+                <dl>
+                    <dt>帮助中心</dt>
+                    <dd class="help">
+                        <img src="img/help.png" alt="">
+                        <dd>jingdon客户端</dd>
+                    </dd>
+                </dl>
+            </div>
+            <!-- footer底部 -->
+            <div class="footer_bottom">
+                <ul>
+                    <li>
+                        <a href="">关于我们</a>
+                    </li>
+                    <P>|</P>
+                    <li>
+                        <a href="">关于我们</a>
+                    </li>
+                    <P>|</P>
+                    <li>
+                        <a href="">关于我们</a>
+                    </li>
+                    <P>|</P>
+                    <li>
+                        <a href="">关于我们</a>
+                    </li>
+                    <P>|</P>
+                    <li>
+                        <a href="">关于我们</a>
+                    </li>
+                    <P>|</P>
+                    <li>
+                        <a href="">关于我们</a>
+                    </li>
+                    <P>|</P>
+                    <li>
+                        <a href="">关于我们</a>
+                    </li>
+                    <P>|</P>
+                    <li>
+                        <a href="">关于我们</a>
+                    </li>
+                    <P>|</P>
+
+                    <li>
+                        <a href="">关于我们</a>
+                    </li>
+                </ul>
+                <br>
+                <br> 地址：湖北省武汉市黄家湖大道333号武汉学院椿萱斋3舍120 电话：15228446751 邮箱：960890883@qq.com <br> 黄林
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

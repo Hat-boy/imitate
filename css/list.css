@@ -1,0 +1,199 @@
+.secondskill {
+    position: absolute;
+    top: 40px;
+    left: 190px;
+    width: 80px;
+    height: 32px;
+    border-left: 2px solid red;
+    background: url(../img/sk.png) no-repeat;
+    background-size: 80px 32px;
+}
+
+.nav_l li {
+    float: left;
+    line-height: 45px;
+    /* 因为commen.css 里已给里行高45的行高了，这里可以不用给 */
+}
+
+.nav_l li a {
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    margin: 0 30px;
+}
+
+.nav_r li {
+    float: left;
+    line-height: 45px;
+}
+
+.nav_r li a {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: icomoon;
+    margin: 0 22px;
+}
+
+.contatiner_hd {
+    height: 130px;
+    background-color: pink;
+    background: url(../img/dd.webp) no-repeat;
+}
+
+
+/* .contatiner_hd i strong {
+    font-family: icomoon;
+    display: block;
+    color: blue;
+    line-height: 100px;
+    text-align: center;
+    font-size: 50px;
+} */
+
+
+/* .contatiner_hd p {
+    text-align: center;
+    color: white;
+} */
+
+.container_bd {
+    margin: 25px 0;
+}
+
+.container_bd ul {
+    width: 1212px;
+    overflow: hidden;
+}
+
+.container_goods {
+    float: left;
+    position: relative;
+    height: 458px;
+    width: 288px;
+    border: 1px solid transparent;
+    margin: 0 12px 15px 0;
+    transition: all .2s;
+    margin-top: 20px;
+}
+
+.container_goods:hover {
+    border: 1px solid red;
+    transform: translate(0, -10px);
+}
+
+.container_goods img {
+    height: 200px;
+    width: 200px;
+    margin: 30px;
+}
+
+.container_goods h5 {
+    margin: 5px 10px;
+    font-weight: 400;
+}
+
+.container_goods p {
+    margin: 15px 10px;
+}
+
+.container_goods p strong {
+    font-size: 24px;
+    color: red;
+    margin-right: 5px;
+}
+
+.container_goods p del {
+    color: gray;
+    font-weight: 700;
+}
+
+.progress {
+    font-size: 14px;
+    margin: 10px;
+}
+
+.progress span {
+    display: inline-block;
+    height: 15px;
+    width: 130px;
+    border: 1px solid red;
+    margin: 0 5px;
+    vertical-align: middle;
+    /* 文字与块级元素之间垂直居中，有display:inline-block,就会有它 */
+    border-radius: 10px;
+}
+
+.bar_in
+/* 进度条内容 */
+
+{
+    height: 15px;
+    width: 87%;
+    background-color: red;
+    border-radius: 10px 0 0 10px;
+}
+
+.container_goods a {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+}
+
+
+/* page分页制作 */
+
+.page {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.page_l a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border: 1px solid lightgray;
+    background-color: #F4F7F3;
+    line-height: 36px;
+}
+
+.page_l .w85 {
+    width: 85px;
+}
+
+.page_l .dotted,
+.page_l .current {
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+.page_r input {
+    height: 36px;
+    width: 46px;
+    border: 1px solid lightgray;
+    text-align: center;
+    transition: all .3s;
+}
+
+
+/* 表单焦点focus,类似与hover */
+
+.page_r input:focus {
+    width: 90px;
+    border: 1px solid deepskyblue;
+}
+
+.page_r button {
+    height: 36px;
+    width: 54px;
+}
+
+.

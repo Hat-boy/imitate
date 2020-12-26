@@ -1,0 +1,67 @@
+ /*清除元素之间默认的内外边距 */
+ 
+ * {
+     margin: 0;
+     padding: 0;
+ }
+ /* 让所有斜体不倾斜 */
+ 
+ em,
+ i {
+     font-style: normal;
+ }
+ /* 去除无序列表前的小点 */
+ 
+ li {
+     list-style: none;
+ }
+ /* 让图片没有边框，让图片与文字垂直居中 */
+ 
+ img {
+     border: 0;
+     /* IE6 */
+     vertical-align: middle;
+ }
+ /* 让button的鼠标按钮变为小手 */
+ 
+ button {
+     cursor: pointer;
+ }
+ 
+ input {
+     outline: none;
+     /* 去掉input框原有的轮廓线 */
+ }
+ 
+ a {
+     color: #666;
+     text-decoration: none;
+ }
+ 
+ a:hover {
+     color: rgb(42, 245, 42);
+ }
+ 
+ body {
+     background-color: #fff;
+     /* height: 3000px; */
+ }
+ /*隐藏 */
+ 
+ .hide,
+ .none {
+     display: none;
+ }
+ /* 清除浮动 */
+ 
+ .clearfix:after {
+     visibility: hidden;
+     clear: both;
+     display: block;
+     content: ".";
+     height: 0;
+ }
+ 
+ .clearfix {
+     *zoom: 1
+ }
